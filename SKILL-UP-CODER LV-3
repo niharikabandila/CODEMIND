@@ -1,1 +1,125 @@
+//REVERSE INTEGER
+#include <stdio.h>
+int main() {
+  int n, reverse = 0, remainder;
+  scanf("%d", &n);
 
+  while (n != 0) {
+    remainder = n % 10;
+    reverse = reverse * 10 + remainder;
+    n /= 10;
+  }
+  printf("%d", reverse);
+}
+
+
+
+//Pronic Number or Heteromecic Number
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,count=0;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        if(i*(i+1)==n)
+        {
+            count=1;
+            break;
+        }
+    }
+    if(count==1)
+    {
+        cout<<"YES";
+    }
+    else
+    {
+        cout<<"NO";
+    }
+}
+
+
+//AUTOMORPHIC NUMBER
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,temp,sqr,count=1;
+    cin>>n;
+    temp=n;
+    sqr=n*n;
+    while(n!=0)
+    {
+        count*=10;
+        n/=10;
+    }
+    if(sqr%count==temp)
+    {
+        cout<<"Automorphic Number ";
+    }
+    else
+    {
+        cout<<"Not an Automorphic Number ";
+    }
+    
+}
+
+
+//AMICABLE NUMBER
+#include<stdio.h>
+int main()
+{
+int i,j, n,m, sum = 0,sum1=0;
+scanf("%d", &n);
+scanf("%d", &m);
+for(i=1; i<n; i++){
+  if(n%i == 0)
+  {
+   sum += i;
+  }
+}
+  for(i=1; i<m; i++){
+  if(m%i == 0)
+  {
+   sum1 += i;
+  }
+  }
+  if(n==sum1 && m==sum)
+  {
+      printf("Amicable");
+  }
+  else
+  {
+      printf("Not Amicable");
+  }
+}
+//ANOTHER LANGUAGE FOR AMICABLE NUMBER
+#include<iostream>
+using namespace std;
+int main()
+{
+int i,j, n,m, sum = 0,sum1=0;
+cin>>n;
+cin>>m;
+for(i=1; i<n; i++){
+  if(n%i == 0)
+  {
+   sum += i;
+  }
+}
+  for(i=1; i<m; i++){
+  if(m%i == 0)
+  {
+   sum1 += i;
+  }
+  }
+  if(n==sum1 && m==sum)
+  {
+      cout<<"Amicable";
+  }
+  else
+  {
+      cout<<"Not Amicable";
+  }
+}
