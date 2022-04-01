@@ -1,1 +1,100 @@
+//INTEGER DIVISION
+x=int(input())
+print(x//10)
 
+
+//AREA OF CIRCLE
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int r;
+    float area;
+    cin>>r;
+    area=3.14*r*r;
+    cout<<fixed<<setprecision(2)<<area;
+}
+
+
+//COMPOUND INTEREST
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double p, r, t, CI;
+
+  
+    scanf("%lf", &p);
+    scanf("%lf", &r);
+    scanf("%lf", &t);
+
+    CI = p* (pow((1 + r / 100), t));
+
+    /* Print the resultant CI */
+    
+    printf("%.2lf",(CI));
+
+    return 0;
+}
+
+
+
+//SIMPLE INTEREST
+#include<iostream>
+using namespace std;
+int main()
+{
+    int p,t,r;
+    int si;
+    cin>>p>>t>>r;
+    si=(p*t*r)/100;
+    cout<<si;
+}
+
+
+//ADD DIGITS
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num,sum=0;
+    cin>>num;
+    while(num>0 || sum>9)
+    {
+       if(num==0)
+       {
+           num=sum;
+           sum=0;
+       }
+       sum=sum+num%10;
+    num/=10;
+    }
+    cout<<sum;
+}
+
+
+//PERFECT NUMBER
+#include<stdio.h>
+int main()
+{
+int i, n, sum = 0;
+scanf("%d", &n);
+for(i=1; i<n; i++){
+  if(n%i == 0)
+  {
+   sum += i;
+  }
+}
+if(sum == n){
+printf("True");
+}
+else{
+printf("False");
+}
+
+return 0;
+}
+
+
+//SELF DIVIDING NUMBER
