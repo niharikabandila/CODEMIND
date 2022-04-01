@@ -1,1 +1,103 @@
+//SUM OF THE GIVEN NUMBERS
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,n1,n2;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>n1>>n2;
+        cout<<n1+n2<<endl;
+    }
+}
 
+
+
+//PERFECT SQUARE ROOT OR NOT
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,a;
+    cin>>n;
+    if(n>=0)
+    {
+        a=sqrt(n);
+        if(a*a==n)
+        {
+            cout<<"True";
+        }
+        else
+        {
+            cout<<"False";
+        }
+    }
+}
+
+
+//REVERSE OF A NUMBERS
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,rev=0,r;
+    cin>>n;
+    while(n!=0)
+    {
+        r=n%10;
+        rev=rev*10+r;
+        n/=10;
+    }
+    cout<<rev;
+}
+
+
+//LARGEST DIGIT
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,l=0,r;
+    cin>>n;
+    while(n>0)
+    {
+        r=n%10;
+        if(l<r)
+        {
+            l=r;
+        }
+        n/=10;
+    }
+    cout<<l;
+}
+
+//UGLY NUMBER
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int temp=0;
+    if(n>=0){
+    }
+    while(n!=1){
+        if(n%5==0){
+            n/=5;
+        }
+        else if(n%3==0){
+            n/=3;
+        }
+        else if(n%2==0){
+            n/=2;
+        }
+        else{
+            cout<<"Not Ugly Number";
+            temp=1;
+            break;
+        }
+    }
+        if(temp==0){
+            cout<<"Ugly Number";
+        }
+}
