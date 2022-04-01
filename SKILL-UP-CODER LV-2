@@ -1,1 +1,94 @@
+//SPY NUMBER
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,sum=0,r,pro=1;
+    cin>>n;
+    while(n>00)
+    {
+        r=n%10;
+        sum+=r;
+        pro*=r;
+        n/=10;
+    }
+    if(sum==pro)
+    {
+        cout<<"Spy Number";
+    }
+    else
+    {
+        cout<<"Not Spy Number";
+    }
+}
 
+
+
+
+//NEON NUMBER
+#include <stdio.h>
+int main()
+{
+    int num, digit, sum =0;
+    scanf("%d",&num);
+    int square = num*num;
+    while(square!=0){
+        digit = square%10;
+        sum += digit;
+        square = square/10;
+    }
+    if(sum == num)
+        printf("Neon Number");
+    else
+        printf("Not Neon Number");
+ 
+    return 0;
+}
+//ANOTHER METHOD FOR NEON NUMBER
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,rem,sum=0,m;
+    cin>>n;
+    m=n*n;
+    while(m!=0)
+    {
+        rem = m%10;
+        sum =sum+rem;
+        m =m/ 10;  
+    }
+    
+    if(sum == n)
+    {
+        cout<<"Neon Number";
+    }
+    else
+    {
+        cout<<"Not Neon Number";
+    }
+}
+
+
+//LCM
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,max;
+    cin>>a>>b;
+    max=(a>b)?a:b;
+    while(1)
+    {
+        if(max%a==0 && max%b==0)
+        {
+            cout<<max;
+            break;
+        }
+        max++;
+    }
+}
+
+
+
+//
