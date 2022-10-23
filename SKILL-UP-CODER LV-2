@@ -26,6 +26,19 @@ int main()
 
 
 //NEON NUMBER
+//python
+num=int(input())
+s=0
+sqr=num*num
+while(sqr!=0):
+        digit = sqr%10;
+        s += digit;
+        sqr = sqr//10;
+if(s == num):
+    print("Neon Number")
+else:
+    print("Not Neon Number")
+//c
 #include <stdio.h>
 int main()
 {
